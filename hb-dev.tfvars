@@ -1,0 +1,15 @@
+vpc_cidr        = "10.0.0.0/16"
+instance_type   = "t3.large"
+min_size        = 2
+max_size        = 10
+# ami_id        = "ami-00c257e12d6828491"  # Ubuntu 24 LTS AMI ID for us-west-2 (Please verify this)
+ami_id          = "ami-0c275a34c317b299d"  # Custom homebound ami
+region          = "us-west-2"
+key_name        = "your-key-pair"  # Ensure your key pair exists
+security_group  = "sg-033b2769941d35119"  # Modify if needed
+public_subnet_1_cidr   = "10.0.1.0/24"    # Public Subnet 1 CIDR
+public_subnet_2_cidr   = "10.0.2.0/24"    # Public Subnet 2 CIDR
+public_subnet_3_cidr   = "10.0.3.0/24"    # Public Subnet 3 CIDR
+private_subnet_1_cidr  = "10.0.4.0/24"    # Private Subnet 1 CIDR
+private_subnet_2_cidr  = "10.0.5.0/24"    # Private Subnet 2 CIDR
+private_subnet_3_cidr  = "10.0.6.0/24"    # Private Subnet 3 CIDR
